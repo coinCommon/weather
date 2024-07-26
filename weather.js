@@ -20,8 +20,8 @@ const params = new URLSearchParams({
 const encodedURL = `${baseURL}?${params.toString()}`;
 
 fetch(encodedURL)
-    .then(data => data.json());
-    .then(response => RequestSucces(response));
+    .then(data => data.json())
+    .then(response => RequestSucces(response))
     .catch(error => RequestError(error));
 
 
